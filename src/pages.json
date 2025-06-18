@@ -1,0 +1,171 @@
+{
+	"easycom": {
+			"autoscan": true, // 是否自动扫描组件 true 为开启
+			"custom": {
+				// uni-ui 组件的匹配规则
+				// "^uni-(.*)" 表示以 "uni-" 开头的组件，如 uni-list、uni-list-item
+				// "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue" 是 uni-ui 组件的实际路径
+				// $1 会被替换为 (.*) 匹配到的内容，如 list、list-item
+				"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+			}
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom" // 隐藏默认导航栏，因为登录页通常有自定义头部
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/study/study",
+			"style": {
+				"navigationBarTitleText": "学习"
+			}
+		},
+		{
+			"path": "pages/course/detail",
+			"style": {
+				"navigationBarTitleText": "课程详情"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/chapter/detail",
+			"style": {
+				"navigationBarTitleText": "章节详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/discover/discover",
+			"style": {
+				"navigationBarTitleText": "发现"
+			}
+		},
+		{
+			"path": "pages/discover/news-detail",
+			"style": {
+				"navigationBarTitleText": "新闻详情"
+			}
+		},
+		{
+			"path": "pages/discover/question-detail",
+			"style": {
+				"navigationBarTitleText": "问题详情"
+			}
+		},
+		{
+			"path": "pages/my/points-detail",
+			"style": {
+				"navigationBarTitleText": "积分详细"
+			}
+		},
+		{
+			"path": "pages/my/questions",
+			"style": {
+				"navigationBarTitleText": "我的问题"
+			}
+		},
+		{
+			"path": "pages/my/favorites",
+			"style": {
+				"navigationBarTitleText": "我的收藏"
+			}
+		},
+		{
+			"path": "pages/my/practice",
+			"style": {
+				"navigationBarTitleText": "我的实践"
+			}
+		},
+		{
+			"path": "pages/practice/detail",
+			"style": {
+				"navigationBarTitleText": "实践详情"
+			}
+		},
+		{
+			"path": "pages/my/cart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/my/orders",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/my/message-center",
+			"style": {
+				"navigationBarTitleText": "消息中心",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+			"path": "pages/search/result",
+			"style": {
+				"navigationBarTitleText": "搜索结果"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#FFCC00",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/home.svg",
+				"selectedIconPath": "static/tabbar/home_selected.svg"
+			},
+			{
+				"pagePath": "pages/study/study",
+				"text": "学习",
+				"iconPath": "static/tabbar/study.svg",
+				"selectedIconPath": "static/tabbar/study_selected.svg"
+			},
+			{
+				"pagePath": "pages/discover/discover",
+				"text": "发现",
+				"iconPath": "static/tabbar/discover.svg",
+				"selectedIconPath": "static/tabbar/discover_selected.svg"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/tabbar/my.svg",
+				"selectedIconPath": "static/tabbar/my_selected.svg"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}

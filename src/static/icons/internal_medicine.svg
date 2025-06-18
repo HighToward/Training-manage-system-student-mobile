@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#52C41A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 心脏形状 -->
+  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="#52C41A" opacity="0.2" stroke="#52C41A" stroke-width="1.5"/>
+  <!-- 心电图线 -->
+  <path d="M3 12h3l2-4 4 8 2-4h3l2-2h3" stroke="#52C41A" stroke-width="2" fill="none"/>
+  <!-- 护士帽装饰 -->
+  <path d="M8 3h8c1 0 2 1 2 2v1H6V5c0-1 1-2 2-2z" fill="#52C41A" opacity="0.3"/>
+  <circle cx="12" cy="4" r="1" fill="#52C41A"/>
+</svg>
